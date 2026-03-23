@@ -18,14 +18,14 @@ API para el traspaso de información desde las tablas de HANA hacia el SQL serve
 ## 🔄 Flujo del sistema
 ```mermaid
 flowchart LR
-    A[(HANA)] --> B[API PHP]
-    B --> C[[🚀 TOMCAT (ddcdw3)]]
-    C --> D[(SQL Server)]
+    A[HANA] --> B[APACHE - PHP]
+    B --> C[TOMCAT ddcdw3]
+    C --> D[SQL Server]
 ```
 
 ## 🔗 Endpoints / Rutas API
 - HANA: hana.ddc.cl:8003 (privado)
-- PHP: 10.20.1.123 (privado)
+- APACHE - PHP: 10.20.1.123 (privado)
 - TOMCAT (`ddcdw3`): 10.20.1.150 (privado)
 - SQL SERVER: ddcbi.database.windows.net:1433
 
