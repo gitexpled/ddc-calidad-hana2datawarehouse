@@ -17,7 +17,7 @@ API para el traspaso de información desde las tablas de HANA hacia el SQL serve
 
 ## 🔄 Flujo del sistema
 ```mermaid
-
+flowchart LR
     A[(HANA)] --> B[API PHP]
     B --> C[[🚀 TOMCAT (ddcdw3)]]
     C --> D[(SQL Server)]
